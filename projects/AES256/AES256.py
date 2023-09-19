@@ -8,6 +8,7 @@ from Cryptodome.Cipher import AES
 from Cryptodome.Random import get_random_bytes
 import platform
 
+
 # For different OS
 if platform.system() == "Windows":
     os.system("cls")
