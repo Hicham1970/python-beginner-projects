@@ -93,16 +93,16 @@ showframe.place(x=550, y=100, width=550, height=550)
 ######################################################################heading
 titlelabel = Label(
     root,
-    text="COLLEGE SYSTEM",
+    text="New SYSTEM",
     font=("arial", 30, "bold"),
     relief=GROOVE,
-    borderwidth=2,
-    bg="gold2",
+    borderwidth=6,
+    bg="gold3",
 )
 titlelabel.place(x=400, y=10)
 ########################################################################connectdatabase
 connectbutton = Button(root, text="Database", width=23, height=3, command=connectdb)
-connectbutton.place(x=900, y=10)
+connectbutton.place(x=600, y=10)
 
 
 root.mainloop()
