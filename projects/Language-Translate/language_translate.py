@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
     if args.from_lang:
         translator = Translator(
-            to_lang=args.to_lang if args.to_lang else "English",
+            to_lang=args.to_lang if args.to_lang else "Frensh",
             from_lang=args.from_lang,
         )
     else:
