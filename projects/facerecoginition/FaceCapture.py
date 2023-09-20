@@ -8,7 +8,7 @@ face_classsifier = cv2.CascadeClassifier(
 def face_extractor(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_classsifier.detectMultiScale(gray, 1.3, 3)
-    if faces is ():  # if there is no face
+    if faces == ():  # if there is no face
         return None
     print(faces)
     for x, y, w, h in faces:

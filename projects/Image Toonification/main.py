@@ -34,7 +34,7 @@ def edge_mask(img, line_size, blur_value):
 
 
 img = cv2.imread(
-    r"E:\Projects for Learning purpose\python-beginner-projects\projects\Image Toonification\images\filename.jpg"
+    r"‪C:\Users\hicham_garroum\Desktop\VBAfiles\ICONS\jpg\pexels-klaus-167676.jpg"
 )
 
 line_size = 5
