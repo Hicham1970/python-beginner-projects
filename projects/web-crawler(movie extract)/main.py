@@ -1,9 +1,9 @@
 import requests
 import lxml
-from bs4
-import BeautifulSoup
-from xlwt
-import *
+from bs4 import BeautifulSoup
+from xlwt import *
+
+
 workbook = Workbook(encoding = 'utf-8')
 table = workbook.add_sheet('data')
 table.write(0, 0, 'Number')

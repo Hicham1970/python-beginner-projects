@@ -17,8 +17,8 @@ def face_extractor(img):
         return cropped_face
 
 
-# url = 'http://172.20.10.6:8080'
-# cam = cv2.VideoCapture(url + '/video')
+url = 'http://192.168.11.104:8080'
+cam = cv2.VideoCapture(url + '/video')
 cam = cv2.VideoCapture(0)
 count = 0  # help in counting
 while True:
