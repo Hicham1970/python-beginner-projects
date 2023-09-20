@@ -2,6 +2,7 @@ import requests
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk
+import re
 
 
 class RealTimeCurrencyConverter:
@@ -31,15 +32,15 @@ class App(tk.Tk):
         self.intro_label = Label(
             self,
             text="Welcome to Real Time Currency Convertor",
-            fg="blue",
+            fg="gray62",
             relief=tk.RAISED,
-            borderwidth=3,
+            borderwidth=5,
         )
         self.intro_label.config(font=("Courier", 15, "bold"))
 
         self.date_label = Label(
             self,
-            text=f"1 Indian Rupee equals = {self.currency_converter.convert('INR','USD',1)} USD \n Date : {self.currency_converter.data['date']}",
+            text=f"1 Moroccan Durhams equals = {self.currency_converter.convert('MAD','USD',1)} USD \n Date : {self.currency_converter.data['date']}",
             relief=tk.GROOVE,
             borderwidth=5,
         )
@@ -68,7 +69,7 @@ class App(tk.Tk):
         )
 
         self.from_currency_variable = StringVar(self)
-        self.from_currency_variable.set("INR")  # default value
+        self.from_currency_variable.set("MAD")  # default value
         self.to_currency_variable = StringVar(self)
         self.to_currency_variable.set("USD")  # default value
 
