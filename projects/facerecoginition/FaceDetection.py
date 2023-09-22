@@ -25,7 +25,7 @@ face_classifier = cv2.CascadeClassifier(
 def face_detector(img, size=0.5):
     grey = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_classifier.detectMultiScale(grey, 1.3, 3)
-    if faces is ():
+    if faces == ():
         return img, []
 
     for x, y, w, h in faces:
@@ -38,7 +38,7 @@ def face_detector(img, size=0.5):
 
 url = "http://172.20.10.6:8080"
 cap = cv2.VideoCapture(0)
-# cap = cv2.VideoCapture(url + '/video')
+cap = cv2.VideoCapture(url + '/video')
 while True:
     ret, frame = cap.read()
 
